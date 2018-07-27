@@ -27,20 +27,6 @@ class Lsas < Formula
   end
 
   def install
- 
-  if Hardware::CPU.is_32_bit?
-    if OS.linux?
-      dir = 'lsas_linux_386'
-    else
-      dir = 'lsas_darwin_386'
-    end
-  else
-    if OS.linux?
-      dir = 'lsas_linux_amd64'
-    else
-      dir = 'lsas_darwin_amd64'
-    end
-  end
-  bin.install "lsas"
+    bin.install "lsas"
   end
 end
