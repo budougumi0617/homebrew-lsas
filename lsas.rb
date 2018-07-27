@@ -41,6 +41,6 @@ class Lsas < Formula
       dir = 'lsas_darwin_amd64'
     end
   end
-   bin.install "#{dir}/lsas"
+  bin.install "lsas"
   end
 end
