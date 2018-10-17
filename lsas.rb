@@ -1,7 +1,7 @@
 require "formula"
 
 REPOSITORY_URL="https://github.com/budougumi0617/lsas".freeze
-HOMEBREW_LSAS_VERSION="v0.1.7".freeze
+HOMEBREW_LSAS_VERSION="0.1.7".freeze
 
 class Lsas < Formula
   homepage REPOSITORY_URL
