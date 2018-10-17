@@ -1,7 +1,7 @@
 require "formula"
 
 REPOSITORY_URL="https://github.com/budougumi0617/lsas".freeze
-HOMEBREW_LSAS_VERSION="0.1.7".freeze
+HOMEBREW_LSAS_VERSION="0.1.8".freeze
 
 class Lsas < Formula
   homepage REPOSITORY_URL
@@ -11,18 +11,18 @@ class Lsas < Formula
     if OS.linux?
       url "#{REPOSITORY_URL}/releases/download/#{HOMEBREW_LSAS_VERSION}/lsas_linux_386.zip"
       # openssl dgst -sha256 dist/snapshot/lsas_linux_386.zip
-      sha256 '1857943a7a983e759862e55b1e7bdec69810aaec03bf18ce1bf62685e42d0db7'
+      sha256 '97f28c2edc2d617338617d8706906fb154f5c1fb0e37ce378b005a3252a94ef3'
     else
       url "#{REPOSITORY_URL}/releases/download/#{HOMEBREW_LSAS_VERSION}/lsas_darwin_386.zip"
-      sha256 'b41927a25aeba5031e4e6c03248512b0f0b8d0343b655bee33dbd301f468a40e'
+      sha256 'd3d43c78928180b311d2fd7c1901548291183704a68adb96f33cbdc1fd390721'
     end
   else
     if OS.linux?
       url "#{REPOSITORY_URL}/releases/download/#{HOMEBREW_LSAS_VERSION}/lsas_linux_amd64.zip"
-      sha256 '4014db1bcd5732069b687b4dbba1de5fa31d77cd302578e6cf9ea065bbbde491'
+      sha256 '8aacfe61e8c73852850180511d3994796a2293bcdc350011f2186a767d776396'
     else
       url "#{REPOSITORY_URL}/releases/download/#{HOMEBREW_LSAS_VERSION}/lsas_darwin_amd64.zip"
-      sha256 '206416771c447d0812d2d1100fe44283198c5fe8e941fd12db27bd8069f2ae0f'
+      sha256 'd21fc26efe944d932a366bff43f6d6d7767e3355bd9e4c5ba3a0e065d86e7fc1'
     end
   end
 
